@@ -56,5 +56,35 @@ namespace CopiaArquivosKTM
                                            " ele pode estar corrompido.\n\nErro reportado : " + ex.Message);
             }
         }
+
+        private void btnDiretorioCluster_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FolderBrowserDialog fbdDiretorioCluster = new FolderBrowserDialog();
+                fbdDiretorioCluster.ShowNewFolderButton = true;
+                fbdDiretorioCluster.SelectedPath = @"D:\";
+                
+                DialogResult resultado = fbdDiretorioCluster.ShowDialog();
+
+                
+                if (resultado == DialogResult.OK)
+                {
+                    this.txtDiretorioCluster.Text = fbdDiretorioCluster.SelectedPath;
+
+                }
+                                                             
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
