@@ -30,7 +30,6 @@ namespace CopiaArquivosKTM
                 opdArquivosTreinamento.CheckFileExists = true;
                 opdArquivosTreinamento.CheckPathExists = true;
                 
-
                 DialogResult resultado = opdArquivosTreinamento.ShowDialog();
 
                 if (resultado == DialogResult.OK)
