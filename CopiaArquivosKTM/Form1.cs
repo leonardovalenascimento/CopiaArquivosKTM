@@ -63,15 +63,13 @@ namespace CopiaArquivosKTM
             {
                 FolderBrowserDialog fbdDiretorioCluster = new FolderBrowserDialog();
                 fbdDiretorioCluster.ShowNewFolderButton = true;
-                fbdDiretorioCluster.SelectedPath = @"D:\";
-                
+                fbdDiretorioCluster.SelectedPath = @"D:\BaseImagem\Sars";
+                                
                 DialogResult resultado = fbdDiretorioCluster.ShowDialog();
-
                 
                 if (resultado == DialogResult.OK)
                 {
                     this.txtDiretorioCluster.Text = fbdDiretorioCluster.SelectedPath;
-
                 }
                                                              
             }
@@ -84,6 +82,13 @@ namespace CopiaArquivosKTM
 
         private void Form1_Load(object sender, EventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
 
         }
     }
